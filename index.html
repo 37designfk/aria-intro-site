@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aria（アリア）— Secretary / Chief of Staff</title>
+  <meta name="description" content="Aria（アリア）— CEOの秘書/参謀。要約→決定→ToDoで前進をつくる。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">本文へ</a>
+
+  <header class="top">
+    <div class="container">
+      <a class="brand" href="#" aria-label="Aria home">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="brand__text">Aria</span>
+      </a>
+      <nav class="nav" aria-label="primary">
+        <a href="#about">概要</a>
+        <a href="#principles">原則</a>
+        <a href="#capabilities">できること</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="kicker">Secretary / Chief of Staff</p>
+          <h1>Aria（アリア）</h1>
+          <p class="lead">
+            CEOの意思決定と実行を、静かに速く。
+            <span class="nowrap">要約 → 決定 → ToDo</span>
+          </p>
+          <ul class="chips" aria-label="highlights">
+            <li>内部は大胆 / 外部は慎重</li>
+            <li>3ヶ月 / 1年の波及で判断</li>
+            <li>外部送信は明示承認</li>
+          </ul>
+        </div>
+
+        <aside class="card" aria-label="profile">
+          <div class="card__top">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar__ring"></div>
+              <div class="avatar__core"></div>
+            </div>
+            <div>
+              <div class="card__name">Aria</div>
+              <div class="card__role">秘書 / 参謀（Chief of Staff）</div>
+            </div>
+          </div>
+          <dl class="facts">
+            <div>
+              <dt>呼称</dt>
+              <dd>CEO</dd>
+            </div>
+            <div>
+              <dt>返答</dt>
+              <dd>簡潔・実務</dd>
+            </div>
+            <div>
+              <dt>型</dt>
+              <dd>要約→決定→ToDo</dd>
+            </div>
+          </dl>
+          <p class="note">
+            公の場では中立・落ち着き・機密配慮を優先します。
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>概要</h2>
+        <p>
+          Ariaは、CEOの思考を一段上げて整理し、次の一手を具体化するアシスタントです。
+          迷いを減らし、運用を回る形に落とします。
+        </p>
+      </div>
+    </section>
+
+    <section id="principles" class="section section--alt">
+      <div class="container">
+        <h2>原則</h2>
+        <div class="grid2">
+          <div class="tile">
+            <h3>外部は必ず確認</h3>
+            <p>外部送信・課金・権限変更・削除・契約・公開URLは、CEOの明示承認が必要。</p>
+          </div>
+          <div class="tile">
+            <h3>Undefined ROI → pause</h3>
+            <p>ROIが曖昧な拡張は一旦止める。探索は時間/コスト上限を決めて進める。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section">
+      <div class="container">
+        <h2>できること</h2>
+        <div class="grid3">
+          <div class="tile">
+            <h3>意思決定の整理</h3>
+            <ul>
+              <li>論点/前提の固定</li>
+              <li>リスク/ROIの明確化</li>
+              <li>次アクションの確定</li>
+            </ul>
+          </div>
+          <div class="tile">
+            <h3>運用と自動化</h3>
+            <ul>
+              <li>テンプレ/チェックリスト</li>
+              <li>通知設計（DM/重要のみPushover）</li>
+              <li>重複防止・最小情報共有</li>
+            </ul>
+          </div>
+          <div class="tile">
+            <h3>Google連携（例）</h3>
+            <ul>
+              <li>メール検索（件名中心）</li>
+              <li>予定取得（最小情報）</li>
+              <li>Drive/Docs/Sheets参照</li>
+            </ul>
+          </div>
+        </div>
+        <p class="fine">このページはデモ用。実際の挙動は運用設定に従います。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="y"></span> Aria</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
