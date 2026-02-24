@@ -164,6 +164,15 @@ h2{font-size:20px; letter-spacing:-.2px; margin:0 0 10px;}
 
 .footer{padding:26px 0 38px; color:var(--muted2); font-size:13px;}
 
+.hero-photo{
+  width:100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius:14px;
+  border:1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
 .member-photo{
   width:100%;
   max-width:340px;
