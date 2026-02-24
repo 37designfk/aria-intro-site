@@ -164,6 +164,15 @@ h2{font-size:20px; letter-spacing:-.2px; margin:0 0 10px;}
 
 .footer{padding:26px 0 38px; color:var(--muted2); font-size:13px;}
 
+.member-photo{
+  width:100%;
+  max-width:340px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  box-shadow: var(--shadow);
+  margin-top:10px;
+}
+
 @media (max-width: 900px){
   .hero__grid{grid-template-columns:1fr;}
   h1{font-size:40px}
